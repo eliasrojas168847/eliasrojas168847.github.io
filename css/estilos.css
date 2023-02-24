@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;0,900;1,200;1,500&family=EB+Garamond:ital,wght@1,400;1,500&family=Playball&display=swap');@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;0,900;1,200;1,500&family=EB+Garamond:ital,wght@1,500&family=Playball&display=swap');*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+.contenedor-header {
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 52px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Playball', cursive;
+    font-size: 34px;
+    color: #fff;
+    text-decoration: none;
+}
+.contenedor-header ul{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+}
+
+.contenedor-header ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 27px;
+    text-decoration: none;
+    transition: .7s;
+}
+.contenedor-header header ul li a:hover{
+    font-size: 20px;
+}
+
+.menu_responsive {
+    background-color: #3a3b3b;
+    color: rgb(247, 242, 242);
+    padding: 7px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.inicio {
+    background: linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,1)), url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 105vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido_banner{
+    padding: 20px;
+    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(/img/banner.jpg);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+.inicio .contenido_banner img{
+    margin-top: 40px;
+    border: 6px solid #464545b0;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido_banner h1{
+    margin-top: 28px;
+    font-size: 33px;
+    font-family: 'EB Garamond';
+    font-weight:500;
+}
+.inicio .contenido_banner h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.inicio .contenido_banner h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+.inicio .contenido_banner .mis_redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 9px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido_banner .mis_redes a:hover{
+    background-color: #2255b3;
+}
+
+.all{
+    display: flex;
+}
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 100px);
+    grid-gap: 80px;
+    margin-top: 1px;
+    margin-left: 3px;
+    width: 100px;
+    height: 100px;
+    background-color: #d9d7da;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+} 
+
+.circle-wrap .circle mask{
+    clip:rect(0px, 15px, 150px, 75px)
+}
+
+.mask .fill-1{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #ec0c0c;
+}
+.mask .full-1,
+.circle .fill-1{
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(153deg);
+}
+
+@keyframes fill-1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(153deg);}
+}
+
+
+.mask .fill-2{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #4f0cec;
+}
+.mask .full-2,
+.circle .fill-2{
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(20deg);
+}
+
+@keyframes fill-2{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(20deg);}
+}
+
+
+.mask .fill-3{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #0cec83;
+}
+.mask .full-3,
+.circle .fill-3{
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(135deg);
+}
+
+@keyframes fill-3{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(135deg);}
+}
+
+.inside-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #212020;
+    line-height: 35px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    z-index: 100;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+
+.contactos{
+    background-color: #000000;
+    color: #fff;
+    padding: 185px 20px;
+}
+.contactos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contactos h2{
+    font-size: 48px;
+    font-family: 'EB Garamond', serif;;
+    text-align: center;
+    padding: 55px 0;
+
+}
+.contactos .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.contactos .fila{
+    display: flex;
+}
+.contactos .fila .col
+{
+    width: 100%;
+}
+.contactos .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.contactos .fila .col ul{
+    list-style: none;
+}
+.contactos .fila .col ul li{
+    margin: 12px 0;
+}
+
+.contactos .fila .col ul li strong{
+    display: inline-block;
+    color: #2255b3;
+    width: 130px;
+}
+
+.contactos .fila .col ul li span{
+    background-color: #2255b3;
+    padding: 3px;
+}
+
+
+.contactos button{
+    cursor: pointer;
+    background-color: transparent;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contactos button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2255b3;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.contactos button:hover .overlay{
+    width: 100%;
+}
+
+/* Curriculum */
+.curriculum{
+    background: linear-gradient(rgba(5,7,12,1), rgba(5,7,12,1)), url(/img/fondocurriycontact.jpg);
+    background-position: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    padding: 60px 0;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #08141e;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    margin-left: 20px;
+}
+
+footer{
+    background: url(/img/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #2255b3;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .menu_responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #000000;
+        width: 200px;
+    }
+    nav.responsive ul{
+        display: block;
+    }
+    nav.responsive ul li{
+        padding: 24px 20px;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 100%;
+    }
+}

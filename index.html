@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CV</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="contenedor-header">
+     <header>
+        <div class="logo">
+            <a href="#">EER</a>
+        </div>
+        <div class="menu_responsive" onclick="menuDeCelular()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                <li><a href="#contactos" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+        </nav>
+     </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido_banner">
+            <div class="container_img">
+                <img src="img/fotodeperfil.jpg" alt="foto_de_perfil">
+            </div>
+            <h1>Ernesto Escuela Ropero</h1>
+            <h2>Diseñador Web / Freelance</h2>
+            <h3>"No tomarse este sitio web con seriedad, cualquier parecido con la realidad, es pura coincidencia"</h3>
+            <div class="mis_redes">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="all">
+               <div class="circle-wrap">
+                    <div class="circle">
+                         <div class="mask full-1">
+                            <div class="fill-1"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill-1"></div>
+                        </div>
+                        <!--contar numeros-->
+                    <div class="inside-circle"><p>Skill</p>70%Html</div>
+                    </div>
+                </div>
+
+
+                <div class="circle-wrap">
+                    <div class="circle">
+                         <div class="mask full-2">
+                            <div class="fill-2"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill-2"></div>
+                        </div>
+                        <!--contar numeros-->
+                <div class="inside-circle"><p>Skill</p>45%Css</div>
+                    </div>
+                </div>
+
+
+                <div class="circle-wrap">
+                    <div class="circle">
+                         <div class="mask full-3">
+                            <div class="fill-3"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill-3"></div>
+                        </div>
+                        <!--contar numeros-->
+                    <div class="inside-circle"><p>Skill</p>23%Js</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Escuela Primaria</h4>
+                        <span class="casa">Santa Clara de Asis</span>
+                        <span class="fecha">2000 - 2009</span>
+                        <p>No debe materias. Lugar: Partido de General Rodriguez, Buenos Aires, Argentina.</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Escuela Secundaria</h4>
+                        <span class="casa">E.E.M.N1 "Perdiendo las Islas Malvinas"</span>
+                        <span class="fecha">2010 - 2013</span>
+                        <p>No debe materias. Lugar: Partido de General Rodriguez, Buenos Aires, Argentina</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Universidad</h4>
+                        <span class="casa">UBA</span>
+                        <span class="fecha">2013 - 2016</span>
+                        <p>Incompleto, adeudando materia de la carrera de Licenciatura de Psicologia, hasta la fecha. Le debe al quiosquero.</p>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Panadero</h4>
+                        <span class="casa">Panaderia "Los panes de Saturno"</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>La especialidad de la casa: Torta de berenjena. Cliente habitual: Tony "el Gordo". </p>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente de Oficina</h4>
+                        <span class="casa">Elon Musk</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Lo mas importante hasta la fecha fue preparar capuchinos a temperatura de 55.7°, y dialogar mi indemnizacion.</p>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseñador Web</h4>
+                        <span class="casa">Ticmas</span>
+                        <span class="fecha">2023 - actualidad</span>
+                        <p>Informacion clasificada por el gobierno de los EE:UU.  Cualquier consulta presentarse a Comodoro Py.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactos" class="contactos">
+        <div class="contenido-seccion" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h2>Contacto</h2>
+                <p>Hola. ¿Que haces papá?, me llamo Ernesto Escuela Ropero. Si esta portfolio fue de tu agrado, no me claves el visto; este es mi primer sitio web obviamente de ejemplo como para probar las habilidades que implemente y otras muy rebuscada de otros sitios web que me parecieron buenisimo. Aca te dejo servido mis datos para un futuro contacto. Muchas gracias por ver el contenido.</p>
+                <div class="fila" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Nacimiento</strong>
+                                06-05-1993
+                            </li>
+                            <li>
+                                <strong>Celular</strong>
+                                (11) 6881-5008
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                shanefalco@outlook.es
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Palma 1125, Moreno, Bs.As, Argentina
+                            </li>
+                            <li>
+                                <strong>Cargo Actual</strong>
+                                <span>FREELANCE</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Todos los derechos reservados. 2023</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
